@@ -13,8 +13,8 @@
 
 	[now_playing.configuration]
 		text_shadows = true
-		song_title_text = "%song%"
+		song_title_text = "{song}"
 		overlay_color = "255,0,0,0"
 		overlay_opacity = 100
-		artist_title_text = "&7%artist%"
+		artist_title_text = "&7{artist}"
 

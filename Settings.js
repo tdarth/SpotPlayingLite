@@ -57,7 +57,7 @@ class Settings {
         placeholder: "Enter Text..",
         subcategory: "Configuration"
     })
-    npSettingsSong = "%song%";
+    npSettingsSong = "{song}";
 
     @TextProperty({
         name: "Artist Title Text",
@@ -66,7 +66,7 @@ class Settings {
         placeholder: "Enter Text..",
         subcategory: "Configuration"
     })
-    npSettingsArtist = "&7%artist%";
+    npSettingsArtist = "&7{artist}";
 
     @ColorProperty({
         name: "Overlay Color",
