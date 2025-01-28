@@ -98,6 +98,11 @@ function getSpotifySongTitle() {
                 name: windowTitle,
                 artists: ["It will be over soon.. or not."]
             };
+        } else if (windowTitle === "Spotify Free" || windowTitle === "Spotify Premium" || windowTitle === "AngleHiddenWindow") {
+            currentSongTitle = {
+                name: "Spotify",
+                artists: ["Track is currently paused."]
+            };
         } else {
             currentSongTitle = {
                 name: windowTitle,

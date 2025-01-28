@@ -3,7 +3,7 @@ import { @Vigilant, @TextProperty, @ParagraphProperty, @ColorProperty, @ButtonPr
 const metadata = FileLib.read("SpotPlayingLite", "metadata.json");
 const version = JSON.parse(metadata).version;
 
-@Vigilant("SpotPlaying", `§a§lSpot§2§oPlaying§7Lite §f${version} §7by §btdarth`)
+@Vigilant("SpotPlayingLite", `§a§lSpot§2§oPlaying§7Lite §f${version} §7by §btdarth`)
 
 class Settings {
     npDragGui = new Gui();
@@ -18,19 +18,6 @@ class Settings {
         subcategory: "Other"
     })
     chatPrefix = "&8[&a&lSpot&2&oPlaying&7Lite&8] &f";
-
-    @ButtonProperty({
-        name: "Reload ChatTriggers",
-        description: "&7Reloading the module is &crequired&7 for some changes to apply.",
-        placeholder: "Reload",
-        category: "Settings",
-        subcategory: "Other"
-    })
-    reloadCT() {
-        Client.showTitle('&f', "&a&lReloading...", 8, 50, 8);
-        ChatLib.command("chattriggers load", true);
-        Client.currentGui.close()
-    }
 
     @TextProperty({
         name: "Check Rate",
@@ -91,7 +78,7 @@ class Settings {
 
     constructor() {
         this.initialize(this);
-        this.setCategoryDescription("Settings", "&7A module by &atdarth &7and &2Github Copilot&7.");
+        this.setCategoryDescription("Settings", "&7A module by &atdarth &7and &2Github Copilot&7. &8(gee, thanks).");
     }
 }
 

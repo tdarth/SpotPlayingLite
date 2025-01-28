@@ -1,0 +1,18 @@
+
+[settings]
+
+	[settings.other]
+		chat_prefix = "&8[&a&lSpot&2&oPlaying&7Lite&8] &f"
+		check_rate = "1000"
+
+[now_playing]
+
+	[now_playing.-_toggles_-]
+		overlay_enabled = true
+		open_spotify_on_click = true
+
+	[now_playing.configuration]
+		text_shadows = true
+		overlay_color = "255,0,0,0"
+		overlay_opacity = 100
+
