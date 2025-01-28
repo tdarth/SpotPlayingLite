@@ -26,7 +26,7 @@ class Settings {
         placeholder: "Enter Time..",
         subcategory: "Other"
     })
-    checkRate = "10000";
+    checkRate = "1000";
 
     // Now Playing
 
@@ -49,6 +49,24 @@ class Settings {
     npHover = true;
 
     // Configuration
+
+    @TextProperty({
+        name: "Song Title Text",
+        description: "&7Use the placeholder &f%song% &7to replace itself with the playing song.",
+        category: "Now Playing",
+        placeholder: "Enter Text..",
+        subcategory: "Configuration"
+    })
+    npSettingsSong = "%song%";
+
+    @TextProperty({
+        name: "Artist Title Text",
+        description: "&7Use the placeholder &f%artist% &7to replace itself with the artist of the playing song.",
+        category: "Now Playing",
+        placeholder: "Enter Text..",
+        subcategory: "Configuration"
+    })
+    npSettingsArtist = "&7%artist%";
 
     @ColorProperty({
         name: "Overlay Color",

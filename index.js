@@ -14,8 +14,10 @@ let isHovering = false;
 function displaySongTitle(songTitle, x, isHovering) {
     if (!songTitle) return;
 
-    const formattedTitle = `&f${songTitle.name}`;
-    const formattedArtist = songTitle.artists && songTitle.artists.length > 0 ? `&7${songTitle.artists.join(", ")}` : "Local File";
+    const formattedTitle = Settings.npSettingsSong.replace("%song%", songTitle.name);
+    const formattedArtist = songTitle.artists && songTitle.artists.length > 0 
+        ? Settings.npSettingsArtist.replace("%artist%", songTitle.artists.join(", "))
+        : "Local File";
 
     const padding = 10;
     const titleWidth = Renderer.getStringWidth(formattedTitle);
