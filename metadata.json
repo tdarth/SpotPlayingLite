@@ -1,0 +1,8 @@
+{
+  "name": "SpotPlayingLite",
+  "creator": "tdarth",
+  "description": "Displays the current song you are listening to on Spotify. (Only works with the Spotify Desktop App on Windows).",
+  "version": "1.0.0",
+  "entry": "index.js",
+  "requires": ["Vigilance"]
+}
